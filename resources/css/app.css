@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* config tailwind class */
+@layer base {
+    .py-navbar-item {
+        @apply py-4
+    }
+    .px-navbar-item {
+        @apply px-4
+    }
+}
+
+.btn-primary {
+    @apply text-white bg-purple-600 py-2 px-3 rounded hover:bg-purple-700 active:bg-purple-800 transition-colors shadow-md
+}
+
+.btn-primary-2 {
+    @apply text-white bg-green-600 py-2 px-3 rounded hover:bg-green-700 active:bg-green-800 transition-colors shadow-md
+}
+
+.wysiwyg-editor{
+    @apply text-gray-600
+}
+
+.wysiwyg-editor table td{
+    @apply px-2 py-1 text-gray-600
+}
+
+.wysiwyg-editor table td:first-child{
+    @apply font-bold
+}
+
+.wysiwyg-editor h3, h4, h5 {
+    @apply mt-4 font-bold 
+}
