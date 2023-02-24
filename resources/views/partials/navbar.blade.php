@@ -4,7 +4,7 @@
     <div>
         <a href="" class="py-navbar-item block">Logo</a>
     </div>
-    <div class="block md:hidden fixed z-20 top-0 left-0 bottom-0 bg-slate-900 w-[220px] h-full shadow-2xl transition-all">
+    <div class="block md:hidden fixed z-20 top-0 left-0 bottom-0 bg-slate-900 w-[220px] h-full shadow-2xl transition-all hidden" id="menuBar">
         <ul>
             <li><a href="" class="py-2 px-navbar-item flex items-center transition-all hover:bg-slate-700">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
@@ -17,13 +17,13 @@
         </ul>
         <ul>
             <li class="">
-                <a href="" class="py-2 px-navbar-item flex items-center transition-all hover:bg-slate-700">
+                <a href="{{ route('cart') }}" class="py-2 px-navbar-item flex items-center transition-all hover:bg-slate-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                 Cart
                 </a>
             </li>
             <li class="relative select-none">
-                <div class="cursor-pointer py-2 px-navbar-item items-center flex justify-between transition-all hover:bg-slate-700 btnTrigger">
+                <div onclick="dropdown()" class="cursor-pointer py-2 px-navbar-item items-center flex justify-between transition-all hover:bg-slate-700 btnTrigger">
                     My Account
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </div>
@@ -93,13 +93,13 @@
     <nav class="hidden md:block">
         <ul class="grid grid-flow-col items-center">
             <li class="">
-                <a href="" class="py-navbar-item px-navbar-item flex items-center transition-all hover:bg-slate-700">
+                <a href="{{ route('cart') }}" class="py-navbar-item px-navbar-item flex items-center transition-all hover:bg-slate-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                 Cart
                 </a>
             </li>
             <li class="relative">
-                <button class="py-navbar-item px-navbar-item items-center flex transition-all hover:bg-slate-700 btnTrigger">
+                <button onclick="dropdown()" class="py-navbar-item px-navbar-item items-center flex transition-all hover:bg-slate-700 btnTrigger">
                     My Account
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </button>
@@ -155,7 +155,7 @@
             </li>
         </ul>
     </nav>
-    <button class="block md:hidden">
+    <button class="block md:hidden" onclick="menu()">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
 </div>

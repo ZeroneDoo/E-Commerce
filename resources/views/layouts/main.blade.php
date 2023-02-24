@@ -15,5 +15,7 @@
     @yield('content')
 
     <script src="{{ asset('assets/js/dropdown.js') }}"></script>
+    <script src="{{ asset('assets/js/responsiveMenuBar.js') }}"></script>
+    <script src="{{ asset('assets/js/countSettings.js') }}"></script>
 </body>
 </html>

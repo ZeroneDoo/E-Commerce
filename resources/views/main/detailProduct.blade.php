@@ -67,7 +67,7 @@
             <label for="">Quantity</label>
             <div class="flex items-center gap-2">
               <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold">-</button>
-              <input class="outline outline-1 rounded outline-gray-500 w-8 h-8 text-center" type="number" name="" id="">
+              <input class="outline outline-1 rounded outline-gray-200 w-8 h-8 text-center" type="number" name="" id="">
               <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold">+</button>
             </div>
         </div>
