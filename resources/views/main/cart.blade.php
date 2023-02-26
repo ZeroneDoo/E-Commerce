@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="container lg:w-3/4 mx-auto py-20 ">
+<div class="container mx-auto p-5 ">
     <div class="p-5 border border-gray-200 rounded-lg">
         <h1 class="text-3xl mb-3">My Cart Items</h1>
         <div class="bg-white rounded-lg p-3">
@@ -10,7 +10,7 @@
             <div class="flex gap-4">
                 <img src="{{ asset('assets/img/1_2.jpg') }}" alt="" class="w-36">
                 <div class="flex flex-col justify-between w-full">
-                    <div class="flex justify-between mb-3">
+                    <div class="flex justify-between mb-3 gap-2">
                         <h3>Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K
                             Sensor, 25,600 DPI, RGB, Adjustable Weights, 11</h3>
                         <span class="text-lg font-semibold">
@@ -36,7 +36,7 @@
             <div class="flex gap-4">
                 <img src="{{ asset('assets/img/1_2.jpg') }}" alt="" class="w-36">
                 <div class="flex flex-col justify-between w-full">
-                    <div class="flex justify-between mb-3">
+                    <div class="flex justify-between mb-3 gap-2">
                         <h3>Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K
                             Sensor, 25,600 DPI, RGB, Adjustable Weights, 11</h3>
                         <span class="text-lg font-semibold">
@@ -61,7 +61,7 @@
             <div class="border-t border-gray-300 mt-5 pt-5">
                 <div class="flex justify-between">
                     <span class="font-bold">Subtotal</span>
-                    <span>$157.99</span>
+                    <span class="text-lg font-bold">$157.99</span>
                 </div>
                 <div>
                     <p>Shipping and tax will be applied on checkout</p>

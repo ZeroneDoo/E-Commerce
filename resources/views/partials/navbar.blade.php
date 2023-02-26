@@ -6,7 +6,7 @@
     </div>
     <div class="block md:hidden fixed z-20 top-0 left-0 bottom-0 bg-slate-900 w-[220px] h-full shadow-2xl transition-all hidden" id="menuBar">
         <ul>
-            <li><a href="" class="py-2 px-navbar-item flex items-center transition-all hover:bg-slate-700">
+            <li><a href="{{ route('home') }}" class="py-2 px-navbar-item flex items-center transition-all hover:bg-slate-700">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                 </svg>
@@ -27,7 +27,7 @@
                     My Account
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </div>
-                <ul class="w-full bg-slate-800 py-2 dropdown">
+                <ul class="w-full bg-slate-800 py-2 dropdown hidden">
                     <li>
                         <a href="" class="flex items-center py-1 px-4 transition-all hover:bg-slate-700">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3">
@@ -69,7 +69,7 @@
                 </a>
             </li>
             <li class="px-3">
-                <a href="" class="flex items-center py-2 px-2 rounded transition-colors bg-emerald-500 hover:bg-emerald-600">
+                <a href="" class="btn-emerald">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
                     Signup for Free
                 </a>
@@ -79,7 +79,7 @@
     {{-- Nav Content 1 --}}
     <nav class="hidden md:block">
         <ul class="grid grid-flow-col">
-            <li><a href="" class="py-navbar-item px-navbar-item flex items-center transition-all hover:bg-slate-700">
+            <li><a href="{{ route('home') }}" class="py-navbar-item px-navbar-item flex items-center transition-all hover:bg-slate-700">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                 </svg>                      
@@ -148,7 +148,7 @@
             </li>
             {{-- Signup Button --}}
             <li>
-                <a href="" class="flex items-center ml-4 py-2 px-2 rounded transition-colors bg-emerald-500 hover:bg-emerald-600">
+                <a href="" class="btn-emerald">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
                     Signup for Free
                 </a>

@@ -3,7 +3,10 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Pengguna;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -18,5 +21,14 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        Pengguna::create([
+            "email" => "ridho@gmail.com",
+            "username" => "ZeroneDoo",
+            "jenis_kelamin" => "Pria",
+            "telpon" => "089312123",
+            "password" => Hash::make("123456"),
+            "profile" => "default.png",
+        ]);
     }
 }

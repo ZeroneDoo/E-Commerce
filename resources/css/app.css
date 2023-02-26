@@ -20,6 +20,10 @@
     @apply text-white bg-green-600 py-2 px-3 rounded hover:bg-green-700 active:bg-green-800 transition-colors shadow-md
 }
 
+.btn-emerald {
+    @apply flex items-center py-2 px-2 rounded transition-colors bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-white
+}
+
 .wysiwyg-editor{
     @apply text-gray-600
 }
@@ -34,4 +38,12 @@
 
 .wysiwyg-editor h3, h4, h5 {
     @apply mt-4 font-bold 
+}
+
+.input-box-primary {
+    @apply outline outline-2 rounded p-2 outline-gray-200 focus:outline-purple-600 focus:shadow-purple-500 focus:shadow-sm
+}
+
+.input-checkbox {
+    accent-color: #9333ea;
 }
