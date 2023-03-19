@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string("telpon");
             $table->string("password");
             $table->string("profile");
+            $table->string("role")->default("user");
             $table->string("google_id")->nullable()->unique();
             $table->timestamps();
         });

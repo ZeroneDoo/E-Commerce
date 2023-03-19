@@ -44,6 +44,17 @@
     @apply outline outline-2 rounded p-2 outline-gray-200 focus:outline-purple-600 focus:shadow-purple-500 focus:shadow-sm
 }
 
+.input-box-error {
+    @apply outline outline-2 rounded p-2 outline-red-600 focus:outline-purple-600 focus:shadow-purple-500 focus:shadow-sm
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 .input-checkbox {
     accent-color: #9333ea;
 }

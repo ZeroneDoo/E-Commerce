@@ -66,9 +66,9 @@
         <div class="flex justify-between items-center mb-3">
             <label for="">Quantity</label>
             <div class="flex items-center gap-2">
-              <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold">-</button>
-              <input class="outline outline-1 rounded outline-gray-200 w-8 h-8 text-center" type="number" name="" id="">
-              <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold">+</button>
+              <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold" name="btnKurang">-</button>
+              <input class="outline outline-1 rounded outline-gray-200 w-8 h-8 text-center" type="number" value="1" name="inputCount">
+              <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold" name="btnTambah">+</button>
             </div>
         </div>
 

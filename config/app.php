@@ -15,6 +15,8 @@ return [
     |
     */
 
+    'google_id' => env('GOOOGLE_CLIENT_ID'),
+
     'name' => env('APP_NAME', 'Laravel'),
 
     /*

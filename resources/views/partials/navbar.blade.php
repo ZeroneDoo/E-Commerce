@@ -53,27 +53,32 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex items-center py-1 px-4 transition-all hover:bg-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                              </svg>
-                            Logout
-                        </a>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button class="flex items-center py-1 px-4 transition-all hover:bg-slate-700 w-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                                  </svg>
+                                Logout
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </li>
+            @if (!Auth::check())
             <li class="my-3">
-                <a href="" class="flex items-center py-2 px-navbar-item transition-all hover:bg-slate-700">
+                <a href="{{ route('login') }}" class="flex items-center py-2 px-navbar-item transition-all hover:bg-slate-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/></svg>
                     Login
                 </a>
             </li>
             <li class="px-3">
-                <a href="" class="btn-emerald">
+                <a href="{{ route('register') }}" class="btn-emerald">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
                     Signup for Free
                 </a>
             </li>
+            @endif
         </ul>
     </div>
     {{-- Nav Content 1 --}}
@@ -130,29 +135,34 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex items-center py-1 px-4 transition-all hover:bg-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
-                              </svg>
-                            Logout
-                        </a>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button class="flex items-center py-1 px-4 transition-all hover:bg-slate-700 w-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+                                  </svg>
+                                Logout
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </li>
+            @if (!Auth::check())
             {{-- Login Button --}}
             <li>
-                <a href="" class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700">
+                <a href="{{ route('login') }}" class="flex items-center py-navbar-item px-navbar-item transition-all hover:bg-slate-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/></svg>
                     Login
                 </a>
             </li>
             {{-- Signup Button --}}
             <li>
-                <a href="" class="btn-emerald">
+                <a href="{{ route('register') }}" class="btn-emerald">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
                     Signup for Free
                 </a>
             </li>
+            @endif
         </ul>
     </nav>
     <button class="block md:hidden" onclick="menu()">

@@ -1,14 +1,14 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="w-[400px] mx-auto mt-8 py-32 text-center">
+<div class="w-[300px] sm:w-[400px] mx-auto mt-5 py-28 text-center">
   <h2 class="text-2xl font-semibold mb-2">Login to your account</h2>
   <p class="mb-4">or <a href="{{ route('register') }}" class="text-purple-600 hover:text-purple-500 ">create new one</a></p>
 
   <form action="{{ route('postLogin') }}" method="POST">
     @csrf
     <div class="mb-3">
-      <input type="text" name="email" placeholder="Your Email" class="input-box-primary w-full" value="{{ old('email') }}">
+      <input autocomplete="off" type="text" name="email" placeholder="Your Email" class="input-box-primary w-full @error('email') input-box-error @enderror" value="{{ old('email') }}">
       @error('email')
           <div class="w-full text-left">
             <small class="text-red-600">{{ $message }}</small>
@@ -17,7 +17,7 @@
     </div>
     
     <div class="mb-3">
-      <input type="password" name="password" placeholder="Your Password" class="input-box-primary w-full">
+      <input autocomplete="off" type="password" name="password" placeholder="Your Password" class="input-box-primary w-full @error('password') input-box-error @enderror">
       @error('password')
           <div class="w-full text-left">
             <small class="text-red-600">{{ $message }}</small>
@@ -38,6 +38,12 @@
       Login
     </button>
   </form>
+
+  <hr class="my-3">
+
+  <div class="">
+    <a href="" class="border border-gray-200 rounded-lg w-full p-3 block hover:bg-gray-200 transition-colors ">Google</a>
+  </div>
 
 </div>
 @endsection

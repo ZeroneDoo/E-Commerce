@@ -8,19 +8,19 @@
   <form action="">
     @csrf
     <div class="mb-3">
-      <input type="text" name="username" placeholder="Your Username" class="input-box-primary w-full">
+      <input autocomplete="off" type="text" name="username" placeholder="Your Username" class="input-box-primary w-full">
     </div>
     
     <div class="mb-3">
-      <input type="email" name="email" placeholder="Your Email" class="input-box-primary w-full">
+      <input autocomplete="off" type="email" name="email" placeholder="Your Email" class="input-box-primary w-full">
     </div>
     
     <div class="mb-3">
-      <input type="password" name="password" placeholder="Your Password" class="input-box-primary w-full">
+      <input autocomplete="off" type="password" name="password" placeholder="Your Password" class="input-box-primary w-full">
     </div>
     
     <div class="mb-3">
-      <input type="password" name="reapeat" placeholder="Reapeat Password" class="input-box-primary w-full">
+      <input autocomplete="off" type="password" name="reapeat" placeholder="Reapeat Password" class="input-box-primary w-full">
     </div>
     
     <button class="btn-primary flex items-center w-full justify-center mt-3 ">

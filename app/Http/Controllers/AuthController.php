@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -17,10 +18,20 @@ class AuthController extends Controller
         ],[
             "email.required" => "Email tidak boleh kosong!",
             "password.required" => "Password tidak boleh kosong!",
-            "passwrod.min" => "Password minimal terdiri dari 6 karakter!",
+            "password.min" => "Password minimal terdiri dari 6 karakter!",
         ]);
 
-        
+        if(Auth::attempt($validate)){
+            return redirect()->route('home');
+        }else{
+            return redirect('/login')->with('error', 'Email atau Password tidak valid');
+        }
+    }
+
+    public function postLogout(Request $request){
+        Auth::logout();
+
+        return redirect()->route('login');
     }
 
     public function viewRegister(){

@@ -21,9 +21,9 @@
                         <div class="flex items-center">
                             Jumlah :
                             <div class="flex items-center gap-2 ml-3 py-1">
-                                <button class="bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white rounded w-8 h-8 font-bold" name="btnMinus">-</button>
-                                <input class="outline outline-1 rounded outline-gray-200 focus:outline-purple-600 focus:shadow-purple-500 focus:shadow-sm w-8 h-8 text-center" type="text" value="1" name="jumlah">
-                                <button class="bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white rounded w-8 h-8 font-bold" name="btnPlus">+</button>
+                                <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold" name="btnKurang">-</button>
+                                <input class="outline outline-1 rounded outline-gray-200 w-8 h-8 text-center" type="number" value="1" name="inputCount">
+                                <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold"  name="btnTambah">+</button>     
                             </div>
                         </div>
                         <a href="" class="text-purple-600 hover:text-purple-500">Remove </a>
@@ -47,9 +47,9 @@
                         <div class="flex items-center">
                             Jumlah :
                             <div class="flex items-center gap-2 ml-3 py-1">
-                                <button class="bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white rounded w-8 h-8 font-bold" name="btnMinus">-</button>
-                                <input class="outline outline-1 rounded outline-gray-200 focus:outline-purple-600 focus:shadow-purple-500 focus:shadow-sm w-8 h-8 text-center" type="text" value="1" name="jumlah">
-                                <button class="bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white rounded w-8 h-8 font-bold" name="btnPlus">+</button>
+                                <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold" name="btnKurang">-</button>
+                                <input class="outline outline-1 rounded outline-gray-200 w-8 h-8 text-center" type="number" value="1" name="inputCount">
+                                <button class="bg-purple-600 text-white rounded w-8 h-8 font-bold" name="btnTambah">+</button>
                             </div>
                         </div>
                         <a href="" class="text-purple-600 hover:text-purple-500">Remove </a>
