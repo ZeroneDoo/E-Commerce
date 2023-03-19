@@ -18,5 +18,6 @@
     <script src="{{ asset('assets/js/responsiveMenuBar.js') }}"></script>
     <script src="{{ asset('assets/js/countSettings.js') }}"></script>
     <script src="{{ asset('assets/js/createDetails.js') }}"></script>
+    <script src="{{ asset('assets/js/liveImageView.js') }}"></script>
 </body>
 </html>
