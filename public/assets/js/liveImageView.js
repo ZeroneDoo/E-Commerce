@@ -5,7 +5,7 @@ function readURL(input) {
         var reader = new FileReader();
         reader.onload = function (e) {
             //e.target.result
-            var productImage = new Image(245, 245);
+            var productImage = new Image();
             productImage.src = e.target.result;
             imageBox.appendChild(productImage);
         }

@@ -22,13 +22,23 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+        // Pengguna::create([
+        //     "email" => "ridho@gmail.com",
+        //     "username" => "ZeroneDoo",
+        //     "jenis_kelamin" => "Pria",
+        //     "telpon" => "089312123",
+        //     "password" => Hash::make("123456"),
+        //     "profile" => "default.png",
+        // ]);
+
         Pengguna::create([
-            "email" => "ridho@gmail.com",
-            "username" => "ZeroneDoo",
+            "email" => "admin@gmail.com",
+            "username" => "Admin",
             "jenis_kelamin" => "Pria",
             "telpon" => "089312123",
             "password" => Hash::make("123456"),
             "profile" => "default.png",
+            "role"=> "admin"
         ]);
     }
 }

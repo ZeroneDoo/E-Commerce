@@ -2,12 +2,13 @@
 
 @section('content')
 {{-- Product Item --}}
-<div class="grid grid-cols-5 gap-6 py-48 px-5">
+<div class="grid grid-cols-5 gap-6 py-5 px-5">
     <div class="col-span-3">
-        <div class="aspect-square flex items-center justify-center">
-            <img src="{{ asset('assets/img/1_2.jpg') }}" alt="">
+        <div class="flex justify-center">
+            <img src="{{ asset('storage/images/'.$dataBarang->image) }}" alt="">
         </div>
-        <div class="flex relative">
+
+        {{-- <div class="flex relative">
             <span class="flex items-center text-white absolute z-10 top-0 left-0 h-full px-2 bg-black/10 hover:bg-black/20 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                     <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z" clip-rule="evenodd" />
@@ -22,23 +23,24 @@
             <a href="" class="border border-gray-200 transition-colors hover:border-purple-600 flex items-center justify-center"><img src="{{ asset('assets/img/1_2.jpg') }}" class="w-16" alt=""></a>
             <a href="" class="border border-gray-200 transition-colors hover:border-purple-600 flex items-center justify-center"><img src="{{ asset('assets/img/1_3.jpg') }}" class="w-16" alt=""></a>
             <a href="" class="border border-gray-200 transition-colors hover:border-purple-600 flex items-center justify-center"><img src="{{ asset('assets/img/1_4.jpg') }}" class="w-16" alt=""></a>
-        </div>
+        </div> --}}
+
     </div>
 
     <div class="col-span-2">
         <h1 class="text-lg font-semibold">
-            Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K
-            Sensor, 25,600 DPI, RGB, Adjustable Weights, 11
+            {{$dataBarang->nama_barang}}
         </h1>
 
         <p class="text-lg font-bold mb-3">
-            $17.99
+            Rp {{ $dataBarang->harga }}
         </p>
 
         <p class="mb-3">
-            Stok 27
+            Stok {{ $dataBarang->stok }}
         </p>
 
+        {{-- stars --}}
         <div class="flex items-center mb-3">
             <p class="flex items-center text-orange-400">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -85,71 +87,11 @@
         </div>
 
         <hr class="my-5">
-        
+        <p class="font-bold text-lg mb-3">Deskripsi Barang: </p>
         <div class="wysiwyg-editor">
-            <table>
-                <tbody>
-                  <tr>
-                    <td>Connectivity Technology</td>
-                    <td>USB</td>
-                  </tr>
-                  <tr>
-                    <td>Recommended Uses For Product</td>
-                    <td>Gaming</td>
-                  </tr>
-                  <tr>
-                    <td>Brand</td>
-                    <td>Logitech G</td>
-                  </tr>
-                  <tr>
-                    <td>Compatible Devices</td>
-                    <td>Personal Computer</td>
-                  </tr>
-                  <tr>
-                    <td>Series</td>
-                    <td>Logitech G502 HERO High Performance Gaming Mouse</td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <p class="">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Deserunt suscipit natus quisquam optio voluptatem quo beatae ex
-                similique, pariatur laborum asperiores explicabo delectus culpa
-                cumque corrupti quasi incidunt at quos!
-              </p>
-              <h4>About the item</h4>
-              <ul class="list-disc pl-6">
-                <li>
-                  Hero 25K sensor through a software update from G HUB, this
-                  upgrade is free to all players: Our most advanced, with 1:1
-                  tracking, 400-plus ips, and 100 - 25,600 max dpi sensitivity
-                  plus zero smoothing, filtering, or acceleration
-                </li>
-                <li>
-                  11 customizable buttons and onboard memory: Assign custom
-                  commands to the buttons and save up to five ready to play
-                  profiles directly to the mouse
-                </li>
-                <li>
-                  Adjustable weight system: Arrange up to five removable 3.6
-                  grams weights inside the mouse for personalized weight and
-                  balance tuning
-                </li>
-                <li>
-                  Programmable RGB Lighting and Lightsync technology: Customize
-                  lighting from nearly 16.8 million colors to match your team's
-                  colors, sport your own or sync colors with other Logitech G
-                  gear
-                </li>
-                <li>
-                  Mechanical switch button tensioning: Metal spring tensioning
-                  system and pivot hinges are built into left and right gaming
-                  mouse buttons for a crisp, clean click feel with rapid click
-                  feedback
-                </li>
-              </ul>
+          {{ $dataBarang->deskripsi }}
         </div>
+        <hr class="my-5">
     </div>
 </div>
 {{-- /Product Item --}}

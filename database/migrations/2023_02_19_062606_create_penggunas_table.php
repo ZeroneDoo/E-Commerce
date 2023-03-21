@@ -16,12 +16,12 @@ return new class extends Migration
             $table->string("email")->unique();
             $table->string("username");
             $table->enum("jenis_kelamin",["Pria", "Wanita"]);
-            $table->string("telpon");
+            $table->string("telpon")->nullable();
             $table->string("password");
-            $table->string("profile");
+            $table->string("profile")->default('default.png');
             $table->string("role")->default("user");
             $table->string("google_id")->nullable()->unique();
-            $table->timestamps();
+            $table->timestamps();   
         });
     }
 

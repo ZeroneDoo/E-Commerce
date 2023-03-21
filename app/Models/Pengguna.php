@@ -12,4 +12,9 @@ class Pengguna extends Authenticatable
     use HasFactory;
 
     protected $guarded = [];
+
+    public function barang()
+    {
+        return $this->belongsToMany(Keranjang::class, Barang::class);
+    }
 }

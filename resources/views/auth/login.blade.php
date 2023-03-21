@@ -42,7 +42,12 @@
   <hr class="my-3">
 
   <div class="">
-    <a href="" class="border border-gray-200 rounded-lg w-full p-3 block hover:bg-gray-200 transition-colors ">Google</a>
+    <button onclick="location.href=`{{ route('googleAuth') }}`" class="group w-full h-12 px-6 border border-gray-300 rounded-lg transition duration-300 hover:border-purple-400 focus:bg-purple-50 active:bg-purple-100">
+        <div class="relative flex items-center space-x-4 justify-center">
+            <img src="https://tailus.io/sources/blocks/social/preview/images/google.svg" class="absolute left-0 w-5" alt="google logo">
+            <span class="block w-max font-semibold tracking-wide text-gray-700 text-sm transition duration-300 group-hover:text-purple-600 sm:text-base">Continue with Google</span>
+        </div>
+    </button>
   </div>
 
 </div>

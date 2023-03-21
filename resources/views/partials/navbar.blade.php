@@ -23,10 +23,12 @@
                 </a>
             </li>
             <li class="relative select-none">
+                @if (Auth::check())
                 <div onclick="dropdown()" class="cursor-pointer py-2 px-navbar-item items-center flex justify-between transition-all hover:bg-slate-700 btnTrigger">
                     My Account
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </div>
+                @endif
                 <ul class="w-full bg-slate-800 py-2 dropdown hidden">
                     <li>
                         <a href="" class="flex items-center py-1 px-4 transition-all hover:bg-slate-700">
@@ -104,10 +106,12 @@
                 </a>
             </li>
             <li class="relative">
+                @if (Auth::check())
                 <button onclick="dropdown()" class="py-navbar-item px-navbar-item items-center flex transition-all hover:bg-slate-700 btnTrigger">
                     My Account
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3" fill="none" viewbox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </button>
+                @endif
                 <input type="checkbox" hidden id="trigger">
                 <ul class="absolute z-10 w-full right-0 bg-slate-900 py-2 hidden dropdown">
                     <li>
